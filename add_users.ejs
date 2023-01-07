@@ -1,0 +1,70 @@
+<%- include('layouts/header') %>
+<div class="conatiner">
+    <div class="row">
+        
+        
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: "Inter";
+    }
+
+    label, button {
+      font-size: 26px;
+      cursor: pointer;
+    }
+
+    input, textarea {
+      border: 3px solid #eee;
+      padding: .4em 1em;
+      border-radius: 6px;
+    }
+
+    form {
+      display: grid;
+      grid-row-gap: 20px;
+      justify-content: center;
+    }
+
+    button {
+      margin-top: 10px;
+      background: #133EF5;
+      color: #fff;
+      padding: 10px 0;
+      border: 0;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <form action="/add" method="POST" id="add-form" enctype="multipart/form-data">
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email">
+
+    <label for="name">Full Name</label>
+    <input type="text" id="fullName" name="name">
+
+    <label for="phone">Phone No</label>
+    <input name="phone" id="phone" type="phone"></input>
+
+    <label for="photo">Photo</label>
+    <input type="file" id="photo" name="photo">
+
+    <button type="submit">Add user</button>
+  </form>
+</div>
+</div>
+<%- include('layouts/footer') %>
+</body>
+</html>
+
